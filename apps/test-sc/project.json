@@ -62,6 +62,14 @@
       "options": {
         "lintFilePatterns": ["apps/test-sc/**/*.{ts,tsx,js,jsx}"]
       }
+    },
+    "component-test": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/test-sc/cypress.config.ts",
+        "testingType": "component",
+        "skipServe": true
+      }
     }
   },
   "tags": []

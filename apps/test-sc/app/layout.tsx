@@ -1,4 +1,5 @@
 import './global.css';
+import { someFunction } from './someFunction';
 
 export const metadata = {
   title: 'Welcome to test-sc',
@@ -10,6 +11,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  console.log(someFunction());
+
   return (
     <html lang="en">
       <body>{children}</body>
